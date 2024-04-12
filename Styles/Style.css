@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h1{
+    text-align: center;
+    animation: titulo 1s ease-in 1;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    animation: menu 1000ms ease-in 1;
+}
+
+@keyframes titulo {
+   from {opacity: 0;}
+
+   to {opacity: 1}
+   }
+
+@keyframes menu {
+    from{transform: translateX(-100%);}
+
+    to{transform: translateX(0%);}
+    
+}   
+
+.nav{
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    left: 0;
+}
+
+@media screen and (max-width: 576px) {
+
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+    }
+    
+}
+
+
+.nav:hover{
+    background-color: black;
+    color:lightgray;
+}
+
+
+
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width:100%
+}
+
+footer, a{
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    margin-top: 10px;
+}
+
+footer, a:hover{
+    color: gray;
+    transition: 0,3sec;
+}
+
+label, input{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+input[type=text], input[type=tel],
+input[type=email], input[type=address], 
+input[type=radio], input[type=checkbox],
+input[type=submit], input[type=reset], select{
+    
+    padding: 2px;
+    margin: 10px;
+    left:5%;  
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
