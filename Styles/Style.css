@@ -36,6 +36,12 @@ table{
      column-gap: 20px;
 }
 
+#ingredientes{
+    border-collapse: separate;
+    border: black 1px solid;
+}
+
+
 @keyframes titulo {
    from {opacity: 0;}
 
