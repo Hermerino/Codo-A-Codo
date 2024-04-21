@@ -22,11 +22,11 @@ nav{
     animation: menu 1000ms ease-in 1;
 }
 
-table{
+table td, table th{
     border-collapse: separate;
-    border-spacing: auto;
+    border-spacing: 10px;
     border: black 1px solid;
-    margin-left: 20px;
+    margin-left: 50px;
     column-gap: 30px;
 }
 
