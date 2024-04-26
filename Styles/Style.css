@@ -1,11 +1,11 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif; /* Cambio de fuente */
 }
 
 header{
-    background-color: black;
+    background-color: #FFA07A; /* Un naranja suave */
     color: white;
     margin-top: auto;
     margin-bottom: auto;
@@ -17,7 +17,7 @@ h1{
 }
 
 nav{
-    background-color: black;
+    background-color: #FFA07A;
     color: white;
     animation: menu 1000ms ease-in 1;
 }
@@ -56,11 +56,11 @@ table td, table th{
 }   
 
 .nav{
-    background-color: grey;
+    background-color: #FFA07A;
     color: white;
     text-decoration: none;
-    padding: 1px;
-    border-radius: 5px;
+    padding: 10px; 
+    border-radius: 10px; 
     margin-bottom: 10px;
     left: 0;
 }
@@ -78,14 +78,20 @@ table td, table th{
 
 
 .nav:hover{
-    background-color: black;
-    color:lightgray;
+    background-color: #FF4500;
+    color: white;
 }
-
+.nav:hover, .btn.nav:hover, footer a:hover, footer .btn:hover {
+    background-color: #FF4500; /* Un rojo-naranja más intenso para el hover */
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
 
 footer{
     position: relative;
+    color : black;
+    background-color: #FFA07A;
     left: 0px;
     bottom: 0px;
     width:100%;
@@ -102,14 +108,15 @@ footer{
 footer, a{
     text-align: center;
     text-decoration: none;
-    background-color: black;
-    color:white;
+    background-color: #FFA07A; /* Un naranja suave */
+    color: white;
     margin-top: 10px;
 }
 
 footer, a:hover{
-    color: gray;
-    transition: 0,3sec;
+    background-color: #FF4500;
+    color: white;
+    transition: color 0.3s ease-in-out;
 }
 
 label, input{
@@ -122,10 +129,10 @@ input[type=email], input[type=address],
 input[type=radio], input[type=checkbox],
 input[type=submit], input[type=reset], select{
     
-    padding: 2px;
+    padding: 10px; 
     margin: 10px;
     left:5%;  
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: left;
