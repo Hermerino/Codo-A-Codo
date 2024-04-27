@@ -1,11 +1,11 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Nunito', sans-serif; /* Cambio de fuente */
+    font-family: 'Nunito', sans-serif;
 }
 
 header{
-    background-color: #FFA07A; /* Un naranja suave */
+    background-color: #FFA07A;
     color: white;
     margin-top: auto;
     margin-bottom: auto;
@@ -82,8 +82,7 @@ table td, table th{
     color: white;
 }
 .nav:hover, .btn.nav:hover, footer a:hover, footer .btn:hover {
-    background-color: #FF4500; /* Un rojo-naranja más intenso para el hover */
-    color: white;
+    background-color: #FF4500;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
