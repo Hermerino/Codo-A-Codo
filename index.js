@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('email').value.trim();
 
         if (!nombre || !apellido || !email) {
-            evento.preventDefault(); // Evita que el formulario se envíe
+            evento.preventDefault();
             alert('Por favor, completa los campos de nombre, apellido y correo electrónico.');
         }
     });
