@@ -114,7 +114,7 @@ footer, a{
 
 footer, a:hover{
     background-color: #FF4500;
-    color: white;
+    color:#FFA07A;
     transition: color 0.3s ease-in-out;
 }
 
