@@ -108,7 +108,7 @@ footer{
 footer, a{
     text-align: center;
     text-decoration: none;
-    background-color: #FFA07A; /* Un naranja suave */
+    background-color: #FFA07A; 
     color: white;
     margin-top: 10px;
 }
