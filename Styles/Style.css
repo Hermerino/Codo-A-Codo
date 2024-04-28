@@ -104,6 +104,16 @@ footer{
     }
 }
 
+@media screen and (max-width: 500px) {
+    .iframes {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
 footer, a{
     text-align: center;
     text-decoration: none;
@@ -126,8 +136,7 @@ label, input{
 input[type=text], input[type=tel],
 input[type=email], input[type=address], 
 input[type=radio], input[type=checkbox],
-input[type=submit], input[type=reset], select{
-    
+input[type=submit], input[type=reset],input[textarea], select{
     padding: 10px; 
     margin: 10px;
     left:5%;  
