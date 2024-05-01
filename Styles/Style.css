@@ -71,7 +71,7 @@ table td, table th{
     nav{
         display: flex;
         flex-direction: column;
-        justify-content: none;
+        justify-content: center;
     }
     
 }
@@ -110,6 +110,7 @@ footer{
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: auto;
     }
 
 }
