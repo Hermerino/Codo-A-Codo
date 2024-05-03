@@ -72,6 +72,7 @@ table td, table th{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-content: center;
     }
     
 }
@@ -137,7 +138,8 @@ label, input{
 input[type=text], input[type=tel],
 input[type=email], input[type=address], 
 input[type=radio], input[type=checkbox],
-input[type=submit], input[type=reset],input[textarea], select{
+input[type=submit], input[type=reset],input[textarea], 
+select, textarea{
     padding: 10px; 
     margin: 10px;
     left:5%;  

@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const nombre = document.getElementById('nombre').value.trim();
         const apellido = document.getElementById('apellido').value.trim();
         const email = document.getElementById('email').value.trim();
+        const comentario = document.getElementById('comentario').value.trim();
+        const direccion = document.getElementById('direccion').value.trim();
 
-        if (!nombre || !apellido || !email) {
+        if (!nombre || !apellido || !email || !comentario) {
             evento.preventDefault();
-            alert('Por favor, completa los campos de nombre, apellido y correo electrónico.');
+            alert('Uno o más campos requeridos no fueron completados. Complételos antes de enviar el formulario');
         }
     });
 });
