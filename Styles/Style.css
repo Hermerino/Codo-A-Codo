@@ -1,26 +1,111 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Nunito', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+:root {
+    /*========== Colors ==========*/
+    --primary-color: #FAA007;
+    --secondary-color: #FFF;
+    --background-color: #1E2326;
+    --third-color: #252A2E;
+    --fourth-color: #FF4450;
 }
 
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Georgia', sans-serif;
+}
+
+
+
 header{
-    background-color: #FFA07A;
+    background-color: var(--third-color);
     color: white;
     margin-top: auto;
     margin-bottom: auto;
 }
 
+body {
+    background-color: #FFA07A;
+}
+
 h1{
     text-align: center;
     animation: titulo 1s ease-in 1;
+    text-decoration: none;
+    font-size: 40px;
 }
 
-nav{
+.header-container {
+    background: var(--background-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.header-container header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header-container header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.header-container header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-container header nav ul li a {
+    text-align: none;
+    color: var(--secondary-color);
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.header-container header nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.nav-responsive {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+
+.flag {
+    width: 20px;
+    height: 20px;
+
+/*nav{
     background-color: #FFA07A;
     color: white;
     animation: menu 1000ms ease-in 1;
 }
+*/
 
 table td, table th{
     border-collapse: separate;
@@ -43,18 +128,27 @@ table td, table th{
 
 
 @keyframes titulo {
-    from {opacity: 0;}
+    from {
+        opacity: 0;
+    }
 
-    to {opacity: 1}
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes menu {
-    from{transform: translateX(-100%);}
+    from{
+        transform: translateX(-100%);
+    }
 
-    to{transform: translateX(0%);}
-    
+    to{
+        transform: translateX(0%);
+    }
+
 }   
 
+/*
 .nav{
     background-color: #FFA07A;
     color: white;
@@ -82,10 +176,15 @@ table td, table th{
     background-color: #FF4500;
     color: white;
 }
-.nav:hover, .btn.nav:hover, footer a:hover, footer .btn:hover {
+.nav:hover,
+.btn.nav:hover,
+footer a:hover,
+footer .btn:hover {
     background-color: #FF4500;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+*/
 
 .consejo{
     text-align: center;
