@@ -1,103 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/41a63992f2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/Style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>-->
     <script src="index.js"></script>
     <link rel="shortcut icon" href="img/icons8-sombrero-de-chef-16.png" type="image/x-icon">
     <title>Recetas de cocina | Manjares cotidianos</title>
 </head>
+
 <body>
-    <header>
-    <h1>Manjares cotidianos</h1>
-    <nav>
-    <nav>
+    <!--  <header>
+        <h1>Manjares cotidianos</h1>
+        <nav>
         <a class="nav btn btn-outline-secondary" href="index.html">Inicio</a>
         <a class="nav btn btn-outline-secondary" href="Contacto.html">Contacto</a>
         <a class="nav btn btn-outline-secondary" href="Acerca.html">Acerca de</a>
         <a class="nav btn btn-outline-secondary btn-outline-secondary" href="Sucursales.html">Sucursales</a>
-    </nav>
+    </nav> -->
+    <div class="header-container">
+        <header>
+            <div class="logo">
+                <a href="index.html">MANJARES COTIDIANOS</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#" onclick="closeMenu()">Home</a></li>
+                    <li><a href="/Sucursales.html" onclick="closeMenu()">Sucursales</a></li>
+                    <li><a href="/Contacto.html" onclick="closeMenu()">Contacto</a></li>
+                    <li><a href="/Acerca.html" onclick="closeMenu()">Acerca de</a></li>
+                    <li><a href="#" onclick="closeMenu()">Iniciar Sesion</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick=toggleMenu()>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
     </header>
-    
-    <p style="text-align: center;"><b><i><u>Receta del día: Panqueques con dulce de leche</b></i></u></p>
 
-    <hr>
     <main>
-        <article>
-            <img src="img/panqueques.jpg" alt="Panqueques" title="Panqueques con dulce de leche" height="50%" width="50%">
+        <section class="receta" id="receta">
+            <div class="receta-container">
+                <h1>Receta del día: Panqueques con dulce de leche</h1>
+                <div class="row1">
+                    <div class="column left">
+                        <div class="item left">
+                            <span class="subtitle">
+                                <p>La Mejor Receta de Paqueques del Mundo</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="item right">
+                            <div class="tabla">
+                                <Table Id="ingredientes">Lista de ingredientes
+                                    <Tr>
+                                        <td><b>Ingredientes</b></td>
+                                        <td><b>Cantidad</b></td>
+                                    </Tr>
+                                    <tr>
+                                        <td>Huevos</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>leche</td>
+                                        <td>250 ml.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Harina</td>
+                                        <td>125 G.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dulce de leche</td>
+                                        <td>80 G.</td>
+                                    </tr>
+                                </Table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
 
-        <p style="text-align: justify;">
+                <ol> Preparación
+                    <li> Lávate bien las manos y la superficie de preparación. Organiza todos tus
+                        ingredientes y
+                        mídelos
+                        perfectamente. Acuérdate que la limpieza y la organización es un gran porcentaje del
+                        éxito
+                        de tu
+                        receta.</li>
+                    <li> Aquí les muestro los ingredientes para los panqueques (crepes). Aunque puedes
+                        mezclar todo
+                        de
+                        una vez, te aconsejo batir los huevos con la harina y un poquito de leche hasta que
+                        la masa
+                        líquida se vuelva homogénea, recién en ese punto agregar el resto de la leche.</li>
+                    <li>Batir con un batidor de alambre hasta que queden bien incorporados los ingredientes
+                        y
+                        especialmente tener cuidado de que no queden grumos. Los grumos son harina cruda
+                        encapsulada
+                        que
+                        quedará así aún hasta después de cocidos. una vez logrado la masa homogénea llevar a
+                        heladera
+                        (nevera, frigorífico) y dejar unos 30 minutos para que se hidrate la harina. De otro
+                        modo a
+                        medida que los vayas haciendo la masa se pondrá cada vez más espesa y los últimos te
+                        saldrán
+                        más
+                        gruesos.</li>
+                    <li>Preparar la sartén panquequera, colocar un poco de manteca (mantequilla). Este
+                        proceso
+                        pueden
+                        repetirlo cada 2 o 3 panqueques. Si el teflón está bien no haría falta, pero la
+                        mantequilla
+                        le
+                        da un sabor más delicado al panqueque. Verter un cucharón de masa líquida (o la
+                        medida
+                        correspondiente al tamaño de tu panquequera, los panqueques son FINOS (hasta 2 mm)
+                        no los
+                        hagas
+                        gruesos.</li>
+                    <li>Cubre bien el fondo, vierte la mezcla al centro y cubre el fondo hasta el borde. El
+                        fuego
+                        debe
+                        estar un poquito más que mínimo, de todos modos siempre adecua tu receta a tu cocina
+                        (estufa).
+                        Verás como los bordes se empiezan a secar y levantar, también verás que se levanta
+                        porque se
+                        hacen burbujas, déjalo hasta que esté dorado de abajo (ayúdate con un utensilio para
+                        ir
+                        levantándolo así podrás ver la parte de abajo). Te puede tomar unos 2 minutos la
+                        cocción del
+                        primer lado.</li>
+                    <li> Dalo vuelta (voltéalo, hago esta aclaración porque en Argentina si decimos
+                        "voltear" es
+                        dejarlo
+                        caer). Ve haciendo una pila y mantenlos tapado con un repasador (trapo, toalla de
+                        cocina)
+                        así no
+                        se secan. Prepara el dulce de leche (manjar, arequipe, cajeta) y un cuchillo o una
+                        espátula
+                        angosta (esteca).</li>
+                    <li> Dalo vuelta (voltéalo, hago esta aclaración porque en Argentina si decimos
+                        "voltear" es
+                        dejarlo
+                        caer). Ve haciendo una pila y mantenlos tapado con un repasador (trapo, toalla de
+                        cocina)
+                        así no
+                        se secan. Prepara el dulce de leche (manjar, arequipe, cajeta) y un cuchillo o una
+                        espátula
+                        angosta (esteca).</li>
+                    <li> Una vez untado, enrollar los panqueques y listo!!! A disfrutar!!! pueden
+                        espolvorearlos con
+                        azúcar impalpable (azúcar glass). Quiero fotos para ver como te quedaron!! Hasta la
+                        próxima
+                        receta!!</li>
+                </ol>
+            </div>
 
-        <div class="tabla">
-        <Table Id="Platos">Lista de Platos
-            <Tr>
-            <td><b>Platos</b></td>
-            <td><b>Precio x 6 unidades</b></td>
-            <td><b>Precio x 12 unidades</b></td>
-            <td><b>Precio x 24 unidades</b></td>
-            </Tr>
-            <tr>
-            <td>Panqueques con dulce de leche</td>
-            <td>$2500</td>
-            <td>$4000</td>
-            <td>$7500</td>
-            </tr>
-            <tr>
-            <td>Panqueques con manzana</td>
-            <td>$2750</td>
-            <td>$5000</td>
-            <td>$8000</td>
-            </tr>
-            <tr>
-            <td>Hot Cakes</td>
-            <td>$6000</td>
-            <td>$10000</td>
-            <td>$14000</td>
-            </tr>
-            <tr>
-            <td>Torre de panqueques con dulce de leche, charlotte y cerezas </td>
-            <td>$12000</td>
-            <td>$25000</td>
-            <td>$35000</td>
-            </tr>
-        </Table>
-        <br>
+        </section>
+        <hr>
+
+<!--=================== section another 'recetas' para ponerle mas onda a la web ================-->
+
+        <section class="receta" id="receta">
+            <Table Id="Platos">Lista de Platos
+                <Tr>
+                <td><b>Platos</b></td>
+                <td><b>Precio x 6 unidades</b></td>
+                <td><b>Precio x 12 unidades</b></td>
+                <td><b>Precio x 24 unidades</b></td>
+                </Tr>
+            <div class="receta-container">
+                <h2>Otras recetas</h2>
+                <div class="row">
+                    <div class="column left">
+                        <h3>Recetas Argentinas</h3>
+                        <div class="item left">
+                            <h4>Panqueques con dulce de leche</h4>
+                            <span class="subtitle">Precios x unidades</span>
+                            <span class="date">"Odio el dulce de leche"</span>
+                            <p>$2.500</p>
+                            <p>$4.000</p>
+                            <p>$7.500</p>
+                        </div>
+                        <div class="item left">
+                            <h4>Panqueques con manzana</h4>
+                            <span class="subtitle">Precios x unidades</span>
+                            <span class="date">"Amo las manzanas"</span>
+                            <p>>$2.750</p>
+                            <p>>$5.000</p>
+                            <p>>$8.000</p>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <h3>Recetas Americanas</h3>
+                        <div class="item right">
+                            <h4>Hot Cakes</h4>
+                            <span class="subtitle">Precios x unidades</span>
+                            <span class="date">Nunca los he probado</span>
+                            <p>$6.000</p>
+                            <p>$10.000</p>
+                            <p>$14.000</p>
+                        </div>
+                        <div class="item right">
+                            <h4>Torre de panqueques con mani untable, charlotte y cerezas </h4>
+                            <span class="subtitle">Precios x unidades</span>
+                            <span class="date">2024</span>
+                            <p>$12.000</p>
+                            <p>$26.000</p>
+                            <p>$35.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <ul> Bebidas
             <li>Gaseosa (coca, limon, naranja) x 1.5l: $2000</li>
             <li>Vino x 750 cc: $3000</li>
             <li>Cerveza x 750 cc: $1500</li>
         </ul>
-        </div>
-        </p>
-        </article>
-        <hr>
-
         <div class="consejo">
             <p>Si no te sale la receta, ¡No importa!<br>
             
             Si envías tus datos en el formulario de contacto, podrás participar de nuestros sorteos semanales y hacerte acreedor de este plato hecho por nuestro equipo de cocineros para 4 personas. </p>
             
         </div>
-
     </main>
-    <Footer>
-        <p>
-        <a href="index.html">Inicio</a> |
-        <a href="Sucursales.html">Sucursales</a> |
-        <a href="Acerca.html">Acerca de</a> |
-        <a href="Contacto.html">Contacto</a>
-        <br>
-        <a  href="https://www.twitter.com" target="_blank"> <i class="fa fa-brands fa-twitter"></i></a>
-        <a  href="https://www.facebook.com" target="_blank"> <i class="fa fa-brands fa-facebook"></i></a>
-        <a  href="https://www.instagram.com" target="_blank"> <i class="fa fa-brands fa-instagram"></i></a><br>
 
+    <Footer class="footer">
+        <div class="social-media">
+            <a  href="https://www.twitter.com" target="_blank"> <i class="fa fa-brands fa-twitter"></i></a>
+            <a  href="https://www.facebook.com" target="_blank"> <i class="fa fa-brands fa-facebook"></i></a>
+            <a  href="https://www.instagram.com" target="_blank"> <i class="fa fa-brands fa-instagram"></i></a><br>
+        </div>
 
-        El material presentado en este sitio está protegido total o parcialmente por sus autores. Derechos Reservados.
-        </p>
+        <P>
+            El material presentado en este sitio está protegido total o parcialmebte por sus autores. Derechos
+            Reservados.
+        </P>
     </Footer>
 </body>
 </html>
