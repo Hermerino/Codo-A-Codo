@@ -99,6 +99,7 @@ h1{
 .flag {
     width: 20px;
     height: 20px;
+}
 
 /*nav{
     background-color: #FFA07A;
@@ -156,6 +157,7 @@ h1{
     background-color: #FF4500;
     color: white;
 }
+
 .nav:hover,
 .btn.nav:hover,
 footer a:hover,
@@ -197,6 +199,44 @@ footer .btn:hover {
 /*********************************************************************************************************************/
 /******** main article                                                                                        *******/
 /*******************************************************************************************************************/
+
+/* Apply this CSS to the table element */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Apply this CSS to the table's th and td elements */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Apply this CSS to the table's th elements */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Apply this CSS to the table's tbody element */
+tbody {
+    display: block;
+    overflow-x: auto;
+}
+
+/* Apply this CSS to the table's tbody element */
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Apply this CSS to the table's thead element */
+thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
 
 table td,
 table th{
@@ -367,9 +407,11 @@ main {
 }
 
 footer{
-    position: relative;
+    position: fixed;
     color : black;
-    background-color: #FFA07A;
+    /* padding-top: 50px;*/
+    text-align: center;
+    background-color: var(--fourth-color);
     left: 0px;
     bottom: 0px;
     width:100%;
@@ -377,29 +419,39 @@ footer{
     overflow: hidden;
 }
 
-footer, .social-media a {
-    text-align: center;
+footer .social-media a {
+    color: var(--secondary-color);
+    display: inline-block;
     text-decoration: none;
-    background-color: #FFA07A; 
-    color: white;
-    margin-top: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 12px 2px;
+    font-size: 20px;
+    transition: .3s;
 }
 
 footer, .social-media a:hover {
+    text-align: center;
+    text-decoration: none;
     background-color: #FF4500;
-    color:#FFA07A;
+    color:blue;
+    margin-top: 10px;
+    opacity: 70%;
     transition: color 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
     footer {
-        position: relative;
+        position: fixed;
     }
 }
 
 @media screen and (max-width: 500px) {
     .iframes {
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
